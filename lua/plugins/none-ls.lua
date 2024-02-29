@@ -6,7 +6,7 @@ return {
       sources = {
         -- Lua
         null_ls.builtins.formatting.stylua,
-        null_ls.builtins.diagnostics.selene,
+        --null_ls.builtins.diagnostics.selene,
         --JavaScript
         null_ls.builtins.formatting.prettier,
         -- Python
