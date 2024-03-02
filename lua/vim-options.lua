@@ -4,4 +4,7 @@ vim.cmd("set number")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.g.mapleader = " "
-
+vim.cmd("map <C-h> <C-w>h")
+vim.cmd("map <C-j> <C-w>j")
+vim.cmd("map <C-k> <C-w>k")
+vim.cmd("map <C-l> <C-w>l")
