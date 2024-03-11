@@ -22,16 +22,26 @@ return {
 			lspconfig.eslint.setup({
 				settings = { packageManager = "npm" },
 				on_attach = function(client, bufnr)
-					vim.api.nvim_create_autocmd("BufWritePre", {
-						buffer = bufnr,
-						command = "EslintFixAll",
-					})
+				  vim.api.nvim_create_autocmd("BufWritePre", {
+				    buffer = bufnr,
+				    command = "EslintFixAll",
+				  })
 				end,
 			})
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
-			lspconfig.tsserver.setup({ capabilities = capabilities })
+			lspconfig.tsserver.setup({
+				capabilities = capabilities,
+				init_options = { preferences = { disableSuggestions = true } },
+			})
 			lspconfig.gopls.setup({ capabilities = capabilities })
-      lspconfig.volar.setup({ capabilities = capabilities})
+			lspconfig.volar.setup({
+				filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
+				init_options = {
+					typescript = {
+						serverPath = "/home/motz/.nvm/versions/node/v18.7.0/lib/node_modules/typescript/lib/tsserverlib.js",
+					},
+				},
+			})
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "<leader>d", vim.lsp.buf.definition, {})
