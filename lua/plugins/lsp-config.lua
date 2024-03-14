@@ -38,7 +38,7 @@ return {
 				filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json" },
 				init_options = {
 					typescript = {
-						serverPath = "/home/motz/.nvm/versions/node/v18.7.0/lib/node_modules/typescript/lib/tsserverlib.js",
+						serverPath = "/home/motz/.nvm/versions/node/v21.7.1/lib/node_modules/typescript/lib/tsserverlib.js",
 					},
 				},
 			})
