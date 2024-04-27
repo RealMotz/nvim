@@ -16,6 +16,8 @@ return {
         null_ls.builtins.formatting.gofmt,
         null_ls.builtins.formatting.goimports_reviser,
         null_ls.builtins.formatting.golines,
+        -- Rust
+        null_ls.builtins.diagnostics.ltrs
       },
     })
     vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
