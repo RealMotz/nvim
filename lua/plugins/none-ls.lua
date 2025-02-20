@@ -14,10 +14,14 @@ return {
         null_ls.builtins.formatting.isort,
         -- Go
         null_ls.builtins.formatting.gofmt,
-        null_ls.builtins.formatting.goimports_reviser,
+        null_ls.builtins.formatting.goimports,
+        -- null_ls.builtins.formatting.goimports_reviser,
         null_ls.builtins.formatting.golines,
         -- Rust
-        null_ls.builtins.diagnostics.ltrs
+        null_ls.builtins.diagnostics.ltrs,
+        -- Ruby
+        null_ls.builtins.diagnostics.rubocop,
+        null_ls.builtins.formatting.rubocop,
       },
     })
     vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
