@@ -1,4 +1,4 @@
-local servers = { "lua_ls", "gopls", "rust_analyzer", "pyright", "eslint", "ts_ls", "tailwindcss" }
+local servers = { "lua_ls", "gopls", "rust_analyzer", "pyright", "eslint", "ts_ls", "tailwindcss", "cssls"}
 
 return {
   {
