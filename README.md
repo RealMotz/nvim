@@ -1,3 +1,3 @@
 # Neovim Configuration
 
-Neovim configuration with Lua
+Personal Neovim configuration
