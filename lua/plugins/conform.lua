@@ -10,6 +10,7 @@ return {
 				rust = { "rustfmt" },
 				go = { "gofmt", "goimports" },
 				ruby = { "rubocop" },
+        cpp = { "clang-format" }
 			},
 		})
 		vim.keymap.set("n", "<leader>gf", function()

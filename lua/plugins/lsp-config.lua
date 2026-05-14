@@ -1,5 +1,5 @@
 local servers =
-	{ "lua_ls", "gopls", "rust_analyzer", "pyright", "eslint", "ts_ls", "tailwindcss", "cssls", "jsonls", "ruby_lsp" }
+	{ "lua_ls", "gopls", "rust_analyzer", "pyright", "eslint", "ts_ls", "tailwindcss", "cssls", "jsonls", "ruby_lsp", "clangd" }
 
 return {
 	{
